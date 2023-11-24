@@ -1,10 +1,14 @@
 :root {
+    /* colors */
     --WHITE: #FFF;              /* białe tło i elementy */
     --LIGHT-BKG: #FAFAFA;       /* lekko szare tło */
     --DARK-BKG: #1E1823;        /* ciemne tło */
     --ACCENT: #FD9222;          /* pomarańczowe elementy i tło */
     --ACCENT-LIGH: #FCF1E0;     /* lekko pomarańczowe tło */
     --DARK: #111;               /* ciemne elementy */
+    /* animation parameters */
+    --TR-FN: cubic-bezier(0.4, 0, 0.2, 1);
+    --TR-DUR: 250ms;
 }
 * {
 	margin: 0;
