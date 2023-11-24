@@ -1,0 +1,111 @@
+/* oprócz klasy .components pozostałe style rozpoczynają się od .comp- */
+.components {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comp-container {
+    padding: 0;
+}
+.list-components {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.list-components>li {
+    width: 308px;
+    line-height: normal;
+}
+.comp-text {
+    text-align: center;
+}
+.comp-images {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    
+}
+.comp-picture {
+    border: 1px solid #FD9222;
+    border-radius: 15px;
+    
+ }
+.comp-bordered-image {
+    border: 1px solid #FD9222;
+        border-radius: 15px;
+        padding: 19px;
+}
+.comp-picture-chocolate {
+    background-color: #FD9222;
+    border: 1px solid #FD9222;
+    border-radius: 15px;
+}
+.comp-item {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+}
+.comp-picture-nuts {
+    background-color: #1E1823;
+    border: 1px solid #FD9222;
+    border-radius: 15px;
+}
+.comp-caption {
+    color:#ffffff
+    }
+    .comp-signature {
+        color: #111111
+    }
+    
+.comp-picture img,
+.comp-picture-nuts img {
+    max-width: 100%;
+    height: auto;
+}
+.comp-images li {
+    margin-right: 19px;
+    display: inline-block;
+    text-align: left;
+}
+@media screen and (min-width: 768px) {
+    .components {
+        padding: 50px 32px;
+    }
+
+    .list-components>li {
+        padding-right: 28px;
+        gap: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .components {
+        padding: 50px;
+    }
+
+    .list-components {
+        gap: 70px;
+    }
+
+    .comp-item {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .comp-item:nth-child(-n + 2)::after {
+        content: "";
+        position: absolute;
+        top: 60px;
+        right: 0;
+        display: block;
+        width: 1px;
+        height: 124px;
+        background-color: rgba(255, 255, 255, 0.50);
+    }
+}
+

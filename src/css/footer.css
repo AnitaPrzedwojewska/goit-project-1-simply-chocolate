@@ -68,6 +68,10 @@
   height: 22px;
 }
 
+.foot-social-svg:hover,
+.foot-social-svg:focus {
+  fill: var(--ACCENT);
+}
 @media screen and (min-width: 768px) {
   .foot-top-div {
     display: flex;

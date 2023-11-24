@@ -1,8 +1,4 @@
 /* oprócz klasy .reviews pozostałe style rozpoczynają się od .rev- */
-.rev-box {
-    align-self: flex-start;
-}
-
 .reviews>.container {
     display: flex;
     flex-direction: column;
@@ -11,19 +7,14 @@
     overflow: hidden;
     margin-bottom: 128px;
 }
-
-.rev-people {
+.rev-box {
+    align-self: flex-start;
+}
+.rev-list {
 	gap: 16px;
 	overflow: hidden;
 }
-.rev-image {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%, -50%);
-}
-.rev-people-list {
-    text-align: center;
+.rev-list-item {
 	position: relative;
 	top: 0;
 	left: 0;
@@ -37,9 +28,15 @@
     background-color: var(--WHITE);
     border: 1px solid rgba(17, 17, 17, 0.10);
     border-radius: 15px;
+	text-align: center;
 }
-
-.rev-name {
+.rev-item-img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+.rev-item-title {
     display: block;
     margin-bottom: 24px;
     font-size: 18px;
@@ -49,12 +46,12 @@
 .rev-list-dots {
     gap: 13px;
 }
-.rev-dot-icon-svg {
+.rev-dot-item-svg {
     width: 13px;
     height: 13px;
     fill: rgba(17, 17, 17, 0.10);
 }
-.rev-dot-icon-svg.long {
+.rev-dot-item-svg.long {
     width: 28px;
     height: 13px;
     fill: var(--ACCENT);
@@ -64,22 +61,8 @@
 	padding: 0 28px;
 	border-radius: 100px;
 }
-
-@media screen and (min-width: 1200px) {
-    .reviews>.container {
-        padding: 0 32px;
-    }
-    .rev-people {
-        gap: 28px;
-    }
-    .rev-people-list {
-        width: 360px;
-        padding: 56px 24px 42px;
-    } 
-}
-
 @media screen and (min-width: 768px) {
-    .rev-people-list {
+    .rev-list-item {
         width: 344px;
         padding: 56px 16px 42px;
     } 
@@ -87,4 +70,16 @@
         height: 50px;
 	    padding: 0 40px;
     }
+}
+@media screen and (min-width: 1200px) {
+    .reviews>.container {
+        padding: 0 32px;
+    }
+    .rev-list {
+        gap: 28px;
+    }
+    .rev-list-item {
+        width: 360px;
+        padding: 56px 24px 42px;
+    } 
 }

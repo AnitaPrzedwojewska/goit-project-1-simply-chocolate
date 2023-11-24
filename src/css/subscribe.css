@@ -1,1 +1,78 @@
 /* oprócz klasy .subscribe pozostałe style rozpoczynają się od .sub- */
+
+.sub-container {
+    background-color: var(--DARK-BKG);
+    padding: 62px 20px 63px 20px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background-image: url(../images/subscribe/mob-subscribe-375x370.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 370px;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .sub-container {
+        background-image: url(../images/subscribe/mob-subscribe-375x3702@2x.jpg);
+    }
+}
+
+.sub-heading {
+    color: var(--WHITE);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sub-text {
+    color: var(--WHITE);
+    text-align: center;
+    width: 326px;
+    margin-bottom: 24px;
+}
+
+.sub-button {
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 100px;
+}
+
+@media (min-width: 768px) {
+    .sub-container {
+        padding: 72px 151px 72px 150px;
+        background-image: url(../images/subscribe/tab-subscribe-768x370.jpg);
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .sub-container {
+        background-image: url(../images/subscribe/tab-subscribe-768x370@2x.jpg);
+        }
+    }
+    .sub-heading {
+        font-size: 24px;
+        letter-spacing: -0.72px;
+        padding-bottom: 24px;
+    }
+    .sub-text {
+        width: 467px;
+    }
+    .sub-button {
+        padding: 14px 40px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sub-container {
+        padding: 72px 367px 72px 366px;
+        background-image: url(../images/subscribe/des-subscribe-1200x370.jpg);
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .sub-container {
+        background-image: url(../images/subscribe/des-subscribe-1200x370@2x.jpg);
+        }
+    }
+    .sub-heading {
+        line-height: 1.17;
+    }
+}

@@ -1,6 +1,38 @@
-<!-- element zamykający to okno musi mieć parametr data-modal-review-close -->
-<div class="modal is-hidden" data-modal-review>
-    <div class="modal-review">
-
+    <div class="modal is-hidden" data-modal-review>
+        <div class="modal-box-re">
+            <button type="button" data-modal-review-close class="modal-button-re">
+                <svg width="24" height="24" class="svg-button-re">
+                    <use href="./images/icons.svg#x-close"></use>
+                </svg>
+            </button>
+            <p class="modal-header-re">Leave review about <span class="accent">Our chocolate</span></p>
+            <form name="review" class="form-modal-re">
+                <div class="form-modal-details-re">
+                    <label for="user-name-rev"></label>
+                    <input type="text" name="user-name" id="user-name-rev" class="input-modal-re" placeholder="Name" required />
+                </div>
+                <div class="form-modal-details-re">
+                    <label for="email-rev"></label>
+                    <input type="email" name="email" id="email-rev" class="input-modal-re" placeholder="Email" required />
+                </div>
+                <div class="form-modal-details-re">
+                    <label for="phone-rev"></label>
+                    <div class="form-field-re">
+                        <input type="tel" name="phone" id="phone-rev" class="input-modal-re input-phone-re"
+                            placeholder="Phone number" required />
+                        <div class="flag-re">
+                            <svg width="24" height="18" class="svg-modal-re">
+                                <use href="./images/icons.svg#flag-ua"></use>
+                            </svg>
+                            <p>+380</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-modal-textarea-re">
+                    <label for="user-comment-rev"></label>
+                    <textarea name="user-comment" id="user-comment-rev" placeholder="Enter text" class="textarea-re"></textarea>
+                </div>
+                <button type="submit" class="send-button-re">Send</button>
+            </form>
+        </div>
     </div>
-</div>

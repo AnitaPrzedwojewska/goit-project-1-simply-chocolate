@@ -19,7 +19,7 @@
   display: none;
 }
 .top-sellers {
-  padding-top: 72px;
+  padding-bottom: 72px;
 }
 .top-button-div {
   display: flex;
@@ -31,6 +31,7 @@
   .top-sellers {
     display: flex;
     flex-direction: column;
+    padding-bottom: 100px;
   }
 
   .top-list {
@@ -54,11 +55,22 @@
   }
   .top-button {
     position: absolute;
-    right: 5px;
+    right: 0px;
     bottom: 68px;
+  }
+  .top-images {
+    width: 344px;
+    height: 464px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .top-sellers {
+    padding-bottom: 128px;
+  }
+  .top-images {
+    width: 368px;
+    height: 464px;
+  }
   .top-last-photo {
     display: block;
   }
@@ -70,7 +82,7 @@
   }
   .top-button {
     position: absolute;
-    right: 52px;
+    right: 0px;
     bottom: 55px;
   }
   .top-content-div {

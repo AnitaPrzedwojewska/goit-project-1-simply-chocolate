@@ -1,1 +1,106 @@
 /* oprócz klasy .advantages  pozostałe style rozpoczynają się od .adv- */
+.advantages {
+  margin-bottom: 72px;
+}
+
+.adv-section {
+  height: 758px;
+  background-color: var(--DARK-BKG);
+  padding: 20px 20px 0px 20px;
+}
+
+.adv-list {
+  list-style-type: none;
+}
+
+.adv-list-item {
+  margin-bottom: 20px;
+  padding-right: 28px;
+}
+
+.adv-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.adv-icon-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 62px;
+  border: 1px solid;
+  border-color: #ffffff80;
+  margin-bottom: 22px;
+  border-radius: 50%;
+}
+
+.adv-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--WHITE);
+  margin-bottom: 18px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.adv-text {
+  color: #ffffffb2;
+  font-size: 14px;
+  line-height: 17.07px;
+  letter-spacing: -0.28px;
+}
+
+@media (min-width: 768px) {
+  .advantages {
+    margin-bottom: 100px;
+  }
+  .adv-section {
+    height: 620px;
+    padding: 50px 32px;
+  }
+  .adv-list-item {
+    margin-bottom: 32px;
+    width: 308px;
+  }
+  .adv-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages {
+    margin-bottom: 128px;
+  }
+  .adv-section {
+    height: 344px;
+    padding: 50px 50px;
+  }
+  .adv-list-item {
+    position: relative;
+    /* margin-bottom: 0px; */
+  }
+  .adv-list-item:nth-child(-n + 2)::after {
+    content: '';
+    position: absolute;
+    top: 60px;
+    right: 0;
+    display: block;
+    width: 1px;
+    height: 124px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .adv-list-item {
+    padding-right: 18px;
+  }
+  .adv-list-item:last-child {
+    padding-right: 0;
+  }
+  .adv-list {
+    gap: 70px;
+    display: flex;
+    justify-content: center;
+  }
+}
