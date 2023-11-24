@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simply chocolate</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+<!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
     crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/main.css">
@@ -16,22 +20,23 @@
 
 <body>
   <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
-  <include src="./partials/header.html"></include> <!-- 1-Anna -->
+  <include src="./partials/header.html"></include> <!-- Anna -->
   <main>
-    <include src="./partials/hero.html"></include> <!-- 1-Aleksander -->
-    <include src="./partials/advantages.html"></include> <!-- 1-Martyna -->
-    <include src="./partials/components.html"></include> <!-- 1-Angelika -->
-    <include src="./partials/how-its-made.html"></include> <!--  -->
-    <include src="./partials/products.html"></include> <!--  -->
-    <include src="./partials/top-sellers.html"></include> <!--  -->
-    <include src="./partials/reviews.html"></include> <!--  -->
-    <include src="./partials/subscribe.html"></include> <!-- 2-Martyna -->
+    <include src="./partials/hero.html"></include> <!-- Aleksander -->
+    <include src="./partials/advantages.html"></include> <!-- Martyna -->
+    <include src="./partials/z-comp.html"></include> <!-- Angelika -->
+    <!-- <include src="./partials/components.html"></include> --> <!-- Anita -->
+    <include src="./partials/how-its-made.html"></include> <!-- Ewa -->
+    <include src="./partials/products.html"></include> <!-- Anita -->
+    <include src="./partials/top-sellers.html"></include> <!-- Aleksandra -->
+    <include src="./partials/reviews.html"></include> <!-- Anna Maria -->
+    <include src="./partials/subscribe.html"></include> <!-- Martyna -->
   </main>
-  <include src="./partials/footer.html"></include> <!-- 1-Aleksandra -->
-  <include src="./partials/toggle-menu.html"></include> <!--  -->
-  <include src="./partials/modal-buy.html"></include> <!--  -->
-  <include src="./partials/modal-review.html"></include> <!--  -->
-  <include src="./partials/modal-subscribe.html"></include> <!--  -->
+  <include src="./partials/footer.html"></include> <!-- Aleksandra -->
+  <include src="./partials/toggle-menu.html"></include> <!-- Anna -->
+  <include src="./partials/modal-buy.html"></include> <!-- Anita/Anna -->
+  <include src="./partials/modal-review.html"></include> <!-- Anna -->
+  <include src="./partials/modal-subscribe.html"></include> <!-- Anna Maria -->
   <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
   <script src="./index.js" type="module"></script>
   <script defer src="js/mobile-menu.js"></script>
