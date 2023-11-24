@@ -1,14 +1,11 @@
 /* style rozpoczynają się od .hero- */
-:root {
-  --tr-fn: cubic-bezier(0.4, 0, 0.2, 1);
-  --tr-duration: 250ms;
-}
-/* ================================================= MOBILE 👇 ========================================= */
+
+/* ==================== MOBILE 👇 ==================== */
 @media screen and (max-width: 767px) {
   .hero {
     display: flex;
     justify-content: center;
-    padding: 0 32px;
+    padding: 0 16px;
   }
   .hero-background {
     display: block;
@@ -97,8 +94,8 @@
     padding: 0;
     cursor: pointer;
     transition: background-color, fill;
-    transition-timing-function: var(--tr-fn);
-    transition-duration: var(--tr-duration);
+    transition-timing-function: var(--TR-FN);
+    transition-duration: var(--TR-DUR);
   }
   .hero-icon:hover,
   .hero-icon:focus {
@@ -107,20 +104,22 @@
   }
 
   .hero-icon-trans {
+    width: 16px;
+    height: 16px;
     fill: var(--ACCENT);
   }
   .hero-icon:hover .hero-icon-trans {
     fill: var(--WHITE);
-    transition-timing-function: var(--tr-fn);
-    transition-duration: var(--tr-duration);
+    transition-timing-function: var(--TR-FN);
+    transition-duration: var(--TR-DUR);
   }
   .hero-icon:focus .hero-icon-trans {
     fill: var(--WHITE);
-    transition-timing-function: var(--tr-fn);
-    transition-duration: var(--tr-duration);
+    transition-timing-function: var(--TR-FN);
+    transition-duration: var(--TR-DUR);
   }
 }
-/* ================================================= TABLET 👇 ========================================= */
+/* ==================== TABLET 👇 ==================== */
 @media screen and (min-width: 768px) {
   .hero {
     display: flex;
@@ -144,13 +143,13 @@
       background-image: url(../images/hero/tab-hero-704x890@2x.jpg);
     }
   }
-  .hero-container {
+  /* .hero-container {
     max-width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
   .hero-tablet {
     display: flex;
     justify-content: space-between;
@@ -203,8 +202,8 @@
     padding: 0;
     cursor: pointer;
     transition: background-color, fill;
-    transition-timing-function: var(--tr-fn);
-    transition-duration: var(--tr-duration);
+    transition-timing-function: var(--TR-FN);
+    transition-duration: var(--TR-DUR);
   }
   .hero-icon:hover,
   .hero-icon:focus {
@@ -216,16 +215,16 @@
   }
   .hero-icon:hover .hero-icon-trans {
     fill: var(--WHITE);
-    transition-timing-function: var(--tr-fn);
-    transition-duration: var(--tr-duration);
+    transition-timing-function: var(--TR-FN);
+    transition-duration: var(--TR-DUR);
   }
   .hero-icon:focus .hero-icon-trans {
     fill: var(--WHITE);
-    transition-timing-function: var(--tr-fn);
-    transition-duration: var(--tr-duration);
+    transition-timing-function: var(--TR-FN);
+    transition-duration: var(--TR-DUR);
   }
 }
-/* ============================================ DESKTOP 👇 ========================================*/
+/* ==================== DESKTOP 👇 ==================== */
 @media screen and (min-width: 1200px) {
   .hero-background {
     padding: 381px 40px 40px;
