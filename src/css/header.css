@@ -25,6 +25,16 @@
     font-style: normal;
 }
 
+.header-logo-svg {
+    width: 21px;
+    height: 21px;
+}
+
+.header-social-media-svg {
+    width: 24px;
+    height: 24px;
+}
+
 /* =============mobile menu============= */
 
 .header-modal-button {
@@ -100,6 +110,10 @@
 
 /* ========== MOBILE ========== */
 @media screen and (max-width: 767px) {
+    .header-hamburger {
+        width: 28px;
+        height: 28px;
+    }
     .header-container {
         padding-top: 20px;
         padding-bottom: 14px;
@@ -189,7 +203,7 @@
     }
 
     .header-nav-links .link {
-        color: #111;
+        color: var(--DARK);
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: -0.28px;
