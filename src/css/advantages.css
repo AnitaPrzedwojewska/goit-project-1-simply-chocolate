@@ -1,12 +1,11 @@
 /* oprócz klasy .advantages  pozostałe style rozpoczynają się od .adv- */
 .advantages {
   margin-bottom: 72px;
+  background-color: var(--DARK-BKG);
 }
 
 .adv-section {
-  height: 758px;
-  background-color: var(--DARK-BKG);
-  padding: 20px 20px 0px 20px;
+  padding: 16px 16px;
 }
 
 .adv-list {
@@ -49,6 +48,11 @@
   font-size: 14px;
   line-height: 17.07px;
   letter-spacing: -0.28px;
+}
+@media screen and (min-width: 375px) {
+    .adv-section {
+        padding: 20px 20px;
+    }
 }
 
 @media (min-width: 768px) {
