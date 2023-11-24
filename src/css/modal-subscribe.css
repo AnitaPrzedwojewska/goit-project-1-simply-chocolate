@@ -1,176 +1,176 @@
 /* oprócz klasy .modal-subscribe pozostałe style rozpoczynają się od .mod-sub- */
 
 .modal-subscribe {
-  margin: 0 auto;
-  background-color: var(--LIGHT-BKG);
-  border-radius: 15px;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  max-height: 100%;
-  overflow: hidden;
-}
-
-.mod-subscribe-text {
-  padding: 32px 24px;
-}
-.mod-subscribe-title {
-  color: var(--DARK);
-  display: block;
-
-  text-transform: uppercase;
-  margin-bottom: 24px;
-  text-align: left;
-}
-.mod-subscribe-image {
-  color: var(--WHITE);
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 169px;
-  background-color: var(--DARK);
-  background-image: url("../images/subscribe/mob-mod-subscribe-311x169.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.btn.mod-subscribe-close {
-  color: var(--WHITE);
-  fill: azure;
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-}
-
-.mod-subscribe-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.mod-subscribe-input {
-  padding: 14px 18px;
-  background-color: var(--LIGHT-BKG);
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
-  border-radius: 25px;
-}
-.mod-subscribe-input,
-.mod-sub-button {
-  flex-grow: 1;
-}
-.mod-subscribe-input::placeholder {
-  color: rgba(64, 64, 64, 0.3);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.28px;
-}
-
-.btn.close-order:hover,
-.btn.close-order:focus {
-  color: var(--ACCENT);
-}
-.mod-subscribe-list-one {
-  margin-bottom: 14px;
-}
-
-.mod-sub-button {
-  cursor: pointer;
-  width: 133px;
-  height: 45px;
-  padding: 17px 40px;
-  border-radius: 100px;
-  border: none;
-  background-color: var(--ACCENT);
-  color: var(--WHITE);
-  font-family: inherit;
-  font-weight: 600;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mod-sub-button:hover,
-.mod-sub-button:focus {
-  background-color: var(--ACCENT-LIGH);
-  color: var(--ACCENT);
-}
-
-.mod-subscribe-close {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.mod-subscribe-label {
-  border-radius: 8px;
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
-  width: 100%;
-  height: 45px;
-  background-color: transparent;
-  outline: transparent;
-  padding-left: 18px;
-}
-@media screen and (min-width: 768px) {
-  .modal-subscribe {
-    width: 538px;
+    margin: 0 auto;
+    background-color: var(--LIGHT-BKG);
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
   }
-}
-.mod-subscribe-image {
-  height: 196px;
-  background-image: url("../images/subscribe/tab-des-mod-subscribe-538x196.jpg");
-}
-.mod-subscribe-text {
-  padding: 40px;
-}
-.mod-subscribe-title {
-  margin-bottom: 28px;
-}
-.mod-subscribe-list {
-  gap: 8px;
-}
-.mod-subscribe-input {
-  padding: 14px 24px;
-  border-radius: 30px;
-}
-.mod-subscribe-input::placeholder {
-  font-size: 18px;
-  letter-spacing: -0.36px;
-}
-@media screen and (min-width: 768px) {
-  .mod-sub-button {
-    width: 137px;
-    height: 52px;
   
-}}
-
-@media screen and (min-width: 375px) {
-  .modal-subscribe {
-    width: 311px;
-    max-height: 95%;
+  .mod-subscribe-text {
+    padding: 32px 24px;
   }
-}
-
-@media screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx)) {
+  .mod-subscribe-title {
+    color: var(--DARK);
+    display: block;
+  
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    text-align: left;
+  }
   .mod-subscribe-image {
-    background-image: url("../images/subscribe/tab-des-mod-subscribe-538x196@2x.jpg");
+    color: var(--WHITE);
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 169px;
+    background-color: var(--DARK);
+    background-image: url("../images/subscribe/mob-mod-subscribe-311x169.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
-}
-
-@media screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx)) {
+  .btn.mod-subscribe-close {
+    color: var(--WHITE);
+    fill: azure;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .mod-subscribe-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .mod-subscribe-input {
+    padding: 14px 18px;
+    background-color: var(--LIGHT-BKG);
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 25px;
+  }
+  .mod-subscribe-input,
+  .mod-sub-button {
+    flex-grow: 1;
+  }
+  .mod-subscribe-input::placeholder {
+    color: rgba(64, 64, 64, 0.3);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
+  
+  .btn.close-order:hover,
+  .btn.close-order:focus {
+    color: var(--ACCENT);
+  }
+  .mod-subscribe-list-one {
+    margin-bottom: 14px;
+  }
+  
+  .mod-sub-button {
+    cursor: pointer;
+    width: 133px;
+    height: 45px;
+    padding: 17px 40px;
+    border-radius: 100px;
+    border: none;
+    background-color: var(--ACCENT);
+    color: var(--WHITE);
+    font-family: inherit;
+    font-weight: 600;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .mod-sub-button:hover,
+  .mod-sub-button:focus {
+    background-color: var(--ACCENT-LIGH);
+    color: var(--ACCENT);
+  }
+  
+  .mod-subscribe-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .mod-subscribe-label {
+    border-radius: 8px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    outline: transparent;
+    padding-left: 18px;
+  }
+   @media screen and (min-width: 768px) {
+    .modal-subscribe {
+      width: 538px;
+    }
+  }
   .mod-subscribe-image {
-    background-image: url("../images/subscribe/mob-mod-subscribe-311x169@2x.jpg");
+    height: 196px;
+    background-image: url("../images/subscribe/tab-des-mod-subscribe-538x196.jpg");
   }
-}
+  .mod-subscribe-text {
+    padding: 40px;
+  }
+  .mod-subscribe-title {
+    margin-bottom: 28px;
+  }
+  .mod-subscribe-list {
+    gap: 8px;
+  }
+  .mod-subscribe-input {
+    padding: 14px 24px;
+    border-radius: 30px;
+  }
+  .mod-subscribe-input::placeholder {
+    font-size: 18px;
+    letter-spacing: -0.36px;
+  }
+  
+  .mod-sub-button {
+      width: 137px;
+      height: 52px;
+  }
 
+
+  @media screen and (min-width: 375px) {
+    .modal-subscribe {
+      width: 311px;
+      max-height: 95%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx)) {
+    .mod-subscribe-image {
+      background-image: url("../images/subscribe/tab-des-mod-subscribe-538x196@2x.jpg");
+    }
+  }
+  
+  @media screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx)) {
+    .mod-subscribe-image {
+      background-image: url("../images/subscribe/mob-mod-subscribe-311x169@2x.jpg");
+    }
+  }
+ 
