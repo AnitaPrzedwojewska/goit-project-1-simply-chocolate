@@ -1,15 +1,15 @@
-.header-container {
+.head-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-nav-container {
+.head-nav-container {
     display: flex;
     align-items: center;
 }
 
-.header-logo {
+.head-logo {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -21,23 +21,23 @@
     text-transform: uppercase;
 }
 
-.header-logo-span {
+.head-logo-span {
     font-style: normal;
 }
 
-.header-logo-svg {
+.head-logo-svg {
     width: 21px;
     height: 21px;
 }
 
-.header-social-media-svg {
+.head-sm-svg {
     width: 24px;
     height: 24px;
 }
 
 /* =============mobile menu============= */
 
-.header-modal-button {
+.head-modal-button {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -45,38 +45,36 @@
     border: none;
 }
 
-.header-nav-container-mobile {
+.head-nav-container-mobile {
     margin-top: 136px;
     margin-left: 50px;
     margin-bottom: auto;
 }
 
-.header-nav-links-mobile {
+.head-nav-mob-links {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.header-nav-links-mobile .link {
+.head-mob-nav-link {
     color: var(--WHITE);
     font-weight: 500;
     line-height: 1.14;
 }
 
-.header-nav-links-mobile .link:focus {
+.head-mob-nav-link:focus {
     color: var(--ACCENT);
 }
-
-.header-social-media-svg-mobile {
+.head-sm-svg-mobile {
     fill: var(--WHITE);
 }
-
-.header-social-media-svg-mobile:focus {
+.head-mob-sm-link:focus .head-sm-svg-mobile {
     fill: var(--ACCENT);
 }
 
-.header-social-media-links,
-.header-social-media-links-mobile {
+.head-sm-links,
+.head-sm-links-mobile {
     display: flex;
     gap: 18px;
 }
@@ -104,22 +102,29 @@
     transform: translateX(0);
 }
 
-.header-x {
+.head-x {
     fill: var(--WHITE);
+}
+.js-open-menu:focus .head-x {
+    fill: var(--ACCENT);
 }
 
 /* ========== MOBILE ========== */
 @media screen and (max-width: 767px) {
-    .header-hamburger {
+    .head-hamburger {
         width: 28px;
         height: 28px;
     }
-    .header-container {
+    .js-open-menu:focus .head-hamburger {
+        fill: var(--ACCENT);
+        color: var(--ACCENT);
+    }  
+    .head-container {
         padding-top: 20px;
         padding-bottom: 14px;
     }
 
-    .header-social-media-container-mobile {
+    .head-sm-container-mobile {
         margin-left: 20px;
         margin-bottom: 20px;
     }
@@ -127,28 +132,28 @@
 
 /* ========== TABLET ========== */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .header-container {
+    .head-container {
         padding-top: 24px;
         padding-bottom: 24px;
     }
 
-    .header-hamburger,
-    .header-x {
+    .head-hamburger,
+    .head-x {
         width: 32px;
         height: 32px;
     }
 
-    .header-modal-button {
+    .head-modal-button {
         top: 24px;
         right: 32px;
     }
 
-    .header-social-media-container-mobile {
+    .head-sm-container-mobile {
         margin-left: 32px;
         margin-bottom: 24px;
     }
 
-    .header-social-media-svg-mobile {
+    .head-sm-svg-mobile {
         width: 24px;
         height: 24px;
     }
@@ -160,11 +165,11 @@
 
 /* ========== NON DESKTOP ========== */
 @media screen and (max-width: 1199px) {
-    .header-nav-links {
+    .head-nav-links {
         display: none;
     }
 
-    .header-social-media-container {
+    .head-sm-container {
         display: none;
     }
 }
@@ -176,50 +181,50 @@
         display: none;
     }
 
-    .header-mobile-menu {
+    .head-mobile-menu {
         display: none;
     }
 
-    .header-container {
+    .head-container {
         padding-top: 24px;
         padding-bottom: 32px;
     }
 
-    .header-logo {
+    .head-logo {
         margin-right: 188px;
         font-size: 18px;
         line-height: 1.11;
         letter-spacing: -0.54px;
     }
 
-    .header-logo-svg {
+    .head-logo-svg {
         width: 24px;
         height: 24px;
     }
 
-    .header-nav-links {
+    .head-nav-links {
         display: flex;
         gap: 24px;
     }
 
-    .header-nav-links .link {
+    .head-nav-links .link {
         color: var(--DARK);
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: -0.28px;
     }
 
-    .header-nav-links .link:hover,
-    .header-nav-links .link:focus {
+    .head-nav-link:hover,
+    .head-nav-link:focus {
         color: var(--ACCENT);
     }
 
-    .social-media-icon {
+    .sm-icon {
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
     }
 
-    .header-social-media-svg:hover,
-    .header-social-media-svg:focus {
+    .head-sm-link:hover .head-sm-svg,
+    .head-sm-link:focus .head-sm-svg {
         fill: var(--ACCENT);
     }
 }
