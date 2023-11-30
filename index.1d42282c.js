@@ -1,0 +1,2 @@
+const swiper=new Swiper(".prod-slide-content",{direction:"horizontal",loop:!1,a11y:{prevSlideMessage:"Previous slide",nextSlideMessage:"Next slide"},breakpoints:{slidesPerView:1,768:{slidesPerView:2,spaceBetween:18},1200:{slidesPerView:3,spaceBetween:18}},pagination:{el:".swiper-pagination",type:"bullets"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
+//# sourceMappingURL=index.1d42282c.js.map
