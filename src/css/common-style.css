@@ -1,188 +1,180 @@
 :root {
-    /* colors */
-    --WHITE: #FFF;              /* białe tło i elementy */
-    --LIGHT-BKG: #FAFAFA;       /* lekko szare tło */
-    --DARK-BKG: #1E1823;        /* ciemne tło */
-    --ACCENT: #FD9222;          /* pomarańczowe elementy i tło */
-    --ACCENT-LIGH: #FCF1E0;     /* lekko pomarańczowe tło */
-    --DARK: #111;               /* ciemne elementy */
-    /* animation parameters */
-    --TR-FN: cubic-bezier(0.4, 0, 0.2, 1);
-    --TR-DUR: 250ms;
+  /* colors */
+  --WHITE: #FFF;        /* białe tło i elementy */
+  --LIGHT-BKG: #FAFAFA;     /* lekko szare tło */
+  --DARK-BKG: #1E1823;    /* ciemne tło */
+  --ACCENT: #FD9222;      /* pomarańczowe elementy i tło */
+  --ACCENT-LIGH: #FCF1E0;   /* lekko pomarańczowe tło */
+  --DARK: #111;         /* ciemne elementy */
+  /* animation parameters */
+  --TR-FN: cubic-bezier(0.4, 0, 0.2, 1);
+  --TR-DUR: 250ms;
 }
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-	background-color: var(--LIGHT-BKG);
-	color: var(--DARK);
-	font-family: Montserrat, sans-serif;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1.28;
-	letter-spacing: -0.28px;
-}
-.list {
-	display: flex;
-	list-style-type: none;
+  background-color: var(--LIGHT-BKG);
+  color: var(--DARK);
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.28px;
 }
 img {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
+/* wyzerowanie styli domyślnych dla elementu */
 .clear-style {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
+/* element ukryty */
 .is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
+/* element ukryty, ale widoczny dla programów czytających */
 .visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	white-space: nowrap;
-	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
-	overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+/* kontener na zawartość sekcji */
 .container {
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 16px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 @media screen and (min-width: 375px) {
-	.container {
-		max-width: 375px;
-        padding: 0 20px;
-	}
+  .container {
+    max-width: 375px;
+    padding: 0 20px;
+  }
 }
 @media screen and (min-width: 768px) {
-	.container {
-		max-width: 768px;
-        padding: 0 32px;
-	}
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
 }
 @media screen and (min-width: 1200px) {
-	.container {
-		max-width: 1200px;
-	}
+  .container {
+    max-width: 1200px;
+  }
 }
+/* lista flex */
+.list {
+  display: flex;
+  list-style-type: none;
+}
+/* odsyłacz */
 .link {
-	text-decoration: none;
-	cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
+/* element w kolorze pomarańczowym */
 .accent {
-	color: var(--ACCENT);
+  color: var(--ACCENT);
 }
+/* tytuł sekcji */
 .section-title {
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: -0.6px;
-    
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.6px;
 }
 @media screen and (min-width: 768px) {
-    .section-title {
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 1.17;
-        letter-spacing: -0.72px;
-    }
+  .section-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.17;
+    letter-spacing: -0.72px;
+  }
 }
-/* style do kompletowania w zależności od przycisku */
-/* np. button clas="btn btn-45 btn-accent" - wielki pomarańczowy przycisk */
-/* np. button clas="btn btn-29 btn-outline" - mały przycisk przezroczysty */
+/* style do przycisków */
+/* każdy button */
 .btn {
-	display: block;
-	outline: none;
-	cursor: pointer;
+  display: block;
+  outline: none;
+  cursor: pointer;
 }
-/* wielkości */
-.btn-45 {
-	height: 45px;
-	padding: 0 28px;
-	border-radius: 100px;
-}
-.btn-41 {
-	height: 41px;
-	padding: 0 28px;
-	border-radius: 100px;
-}
-.btn-33 {
-	height: 33px;
-	padding: 0 20px;
-	border-radius: 100px;
-}
-.btn-29 {
-	height: 29px;
-	padding: 0 16px;
-	border-radius: 100px;
-}
-.btn-24 {
-	height: 24px;
-	padding: 0 16px;
-	border-radius: 35px;
-}
-/* kolorystyka */
+/* button pomarańczowy */
 .btn-accent {
-	background-color: var(--ACCENT);
-	border: 1px solid var(--ACCENT);
-	color: var(--WHITE);
+  background-color: var(--ACCENT);
+  border: 1px solid var(--ACCENT);
+  color: var(--WHITE);
+  transition-property: background-color, border, color;
+  transition-duration: var(--TR-DUR);
+  transition-timing-function: var(--TR-FN);
 }
 .btn-accent:hover,
 .btn-accent:focus {
-	background-color: var(--ACCENT-LIGH);
-	border: 1px solid var(--ACCENT-LIGH);
-	color: var(--ACCENT);
+  background-color: var(--ACCENT-LIGH);
+  border: 1px solid var(--ACCENT-LIGH);
+  color: var(--ACCENT);
 }
+/* button przezroczytsy z białą ramką */
 .btn-outln {
-	background-color: transparent;
-	border: 1px solid var(--WHITE);
-	color: var(--WHITE);
+  background-color: transparent;
+  border: 1px solid var(--WHITE);
+  color: var(--WHITE);
+  transition-property: background-color, border, color;
+  transition-duration: var(--TR-DUR);
+  transition-timing-function: var(--TR-FN);
 }
 .btn-outln:hover,
 .btn-outln:focus {
-	background-color: transparent;
-	border: 1px solid var(--ACCENT);
-	color: var(--ACCENT);
+  background-color: transparent;
+  border: 1px solid var(--ACCENT);
+  color: var(--ACCENT);
 }
+/* button przezroczysty z pomarańczową ramką */
 .btn-outln-accent {
-	background-color: transparent;
-	border: 1px solid var(--ACCENT);
-	color: var(--DARK);
+  background-color: transparent;
+  border: 1px solid var(--ACCENT);
+  color: var(--DARK);
+  transition-property: background-color, border, color;
+  transition-duration: var(--TR-DUR);
+  transition-timing-function: var(--TR-FN);
 }
 .btn-outln-accent:hover,
 .btn-outln-accent:focus {
-	background-color: var(--ACCENT);
-	border: 1px solid var(--ACCENT);
-	color: var(--WHITE);
+  background-color: var(--ACCENT);
+  border: 1px solid var(--ACCENT);
+  color: var(--WHITE);
 }
+/* niby-buttony */
 .btn-other {
-	background-color: var(--LIGHT-BKG);
-	border: 1px solid rgba(17, 17, 17, 0.1);
-	color: var(--DARK);
+  background-color: var(--LIGHT-BKG);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  color: var(--DARK);
 }
+/* okno modalne */
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(46, 47, 66, 0.4);
-    /* animacje na potem */
-    /* transition-property: opacity, visibility;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition-property: opacity, visibility;
+  transition-duration: var(--TR-DUR);
+  transition-timing-function: var(--TR-FN);
 }

@@ -2,8 +2,7 @@
 .rev-box {
     align-self: flex-start;
 }
-
-.reviews>.container {
+.rev-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,18 +10,17 @@
     overflow: hidden;
     margin-bottom: 128px;
 }
-
-.rev-people {
+.rev-people-list {
 	gap: 16px;
 	overflow: hidden;
 }
-.rev-image {
+.rev-people-image {
     position: absolute;
     left: 50%;
     top: 0;
     transform: translate(-50%, -50%);
 }
-.rev-people-list {
+.rev-people-item {
     text-align: center;
 	position: relative;
 	top: 0;
@@ -30,7 +28,7 @@
 	display: flex;
     flex-direction: column;
 	flex-shrink: 0;
-	width: 335px;
+	width: 280px;
 	height: 200px;
 	margin-top: 42px;
     padding: 56px 18px 42px;
@@ -38,8 +36,7 @@
     border: 1px solid rgba(17, 17, 17, 0.10);
     border-radius: 15px;
 }
-
-.rev-name {
+.rev-people-name {
     display: block;
     margin-bottom: 24px;
     font-size: 18px;
@@ -64,22 +61,14 @@
 	padding: 0 28px;
 	border-radius: 100px;
 }
-
-@media screen and (min-width: 1200px) {
-    .reviews>.container {
-        padding: 0 32px;
+@media screen and (min-width: 375px) {
+    .rev-people-item {
+        width: 335px;
+        padding: 56px 16px 42px;
     }
-    .rev-people {
-        gap: 28px;
-    }
-    .rev-people-list {
-        width: 360px;
-        padding: 56px 24px 42px;
-    } 
 }
-
 @media screen and (min-width: 768px) {
-    .rev-people-list {
+    .rev-people-item {
         width: 344px;
         padding: 56px 16px 42px;
     } 
@@ -87,4 +76,16 @@
         height: 50px;
 	    padding: 0 40px;
     }
+}
+@media screen and (min-width: 1200px) {
+    .rev-container {
+        padding: 0 32px;
+    }
+    .rev-people-list {
+        gap: 28px;
+    }
+    .rev-people-item {
+        width: 360px;
+        padding: 56px 24px 42px;
+    } 
 }
