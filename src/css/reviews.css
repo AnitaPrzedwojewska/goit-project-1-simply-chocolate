@@ -1,7 +1,4 @@
 /* oprócz klasy .reviews pozostałe style rozpoczynają się od .rev- */
-.rev-box {
-    align-self: flex-start;
-}
 .rev-container {
     display: flex;
     flex-direction: column;
@@ -10,19 +7,15 @@
     overflow: hidden;
     margin-bottom: 128px;
 }
-.rev-people-list {
-	gap: 16px;
-	overflow: hidden;
+.rev-slide-container {
+    position: relative;
+    width: 100%;
 }
-.rev-people-image {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%, -50%);
+.rev-slide-content {
+    width: 100%;
 }
-.rev-people-item {
-    text-align: center;
-	position: relative;
+.rev-item {
+    position: relative;
 	top: 0;
 	left: 0;
 	display: flex;
@@ -35,26 +28,36 @@
     background-color: var(--WHITE);
     border: 1px solid rgba(17, 17, 17, 0.10);
     border-radius: 15px;
+    text-align: center;
 }
-.rev-people-name {
+.rev-item-image {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+.rev-item-name {
     display: block;
     margin-bottom: 24px;
     font-size: 18px;
     font-weight: 600;
     line-height: 1.33; 
 }
-.rev-list-dots {
-    gap: 13px;
+.rev-slide-pagination.swiper-pagination-rev {
+    position: relative;
+    height: 20px;
+    /* background-color: yellow; */
 }
-.rev-dot-icon-svg {
+.swiper-pagination-bullet {
     width: 13px;
     height: 13px;
-    fill: rgba(17, 17, 17, 0.10);
+    margin: 0 7px;
+    color: rgba(17, 17, 17, 0.10);
+    border-radius: 7px;
 }
-.rev-dot-icon-svg.long {
+.swiper-pagination-bullet-active {
     width: 28px;
-    height: 13px;
-    fill: var(--ACCENT);
+    background-color: var(--ACCENT);
 }
 .rev-btn-leave {
     height: 41px;
@@ -62,13 +65,13 @@
 	border-radius: 100px;
 }
 @media screen and (min-width: 375px) {
-    .rev-people-item {
+    .rev-item {
         width: 335px;
         padding: 56px 16px 42px;
     }
 }
 @media screen and (min-width: 768px) {
-    .rev-people-item {
+    .rev-item {
         width: 344px;
         padding: 56px 16px 42px;
     } 
@@ -81,10 +84,10 @@
     .rev-container {
         padding: 0 32px;
     }
-    .rev-people-list {
+    .rev-slide-wrapper {
         gap: 28px;
     }
-    .rev-people-item {
+    .rev-item {
         width: 360px;
         padding: 56px 24px 42px;
     } 
