@@ -166,6 +166,18 @@ img {
   border: 1px solid rgba(17, 17, 17, 0.1);
   color: var(--DARK);
 }
+/* paginacja do sliderów */
+.swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    margin: 0 7px;
+    color: rgba(17, 17, 17, 0.10);
+    border-radius: 7px;
+}
+.swiper-pagination-bullet-active {
+    width: 28px;
+    background-color: var(--ACCENT);
+}
 /* okno modalne */
 .modal {
   position: fixed;
