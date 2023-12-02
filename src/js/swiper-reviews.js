@@ -2,12 +2,12 @@
 // To jest komentarz. pod spodem piszemy nasz kod JavaScript
 // core version + navigation, pagination modules:
 
-const swiper = new Swiper('.swiper-rev', {
+const swiper = new Swiper('.rev-slide-content', {
   // Optional parameters
   direction: 'horizontal',
-  
+
   loop: false,
-  
+
   breakpoints: {
     slidesPerView: 1,
     // when window width is >= 768px
@@ -21,9 +21,9 @@ const swiper = new Swiper('.swiper-rev', {
       spaceBetween: 28,
     },
   },
-  
+
   pagination: {
-    el: '.swiper-pagination-rev',
+    el: '.rev-slide-pagination',
     type: 'bullets',
   },
 });

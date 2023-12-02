@@ -2,10 +2,10 @@
 // To jest komentarz. pod spodem piszemy nasz kod JavaScript
 // core version + navigation, pagination modules:
 
-const swiper = new Swiper(".swiper-prod", {
+const swiper1 = new Swiper('.prod-slide-content', {
   // Optional parameters
   direction: 'horizontal',
-    
+
   loop: false,
 
   breakpoints: {
@@ -23,7 +23,7 @@ const swiper = new Swiper(".swiper-prod", {
   },
 
   pagination: {
-    el: '.swiper-pagination-prod',
+    el: '.prod-slide-pagination',
     type: 'bullets',
   },
 });
