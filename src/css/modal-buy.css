@@ -4,7 +4,7 @@
     top: 50%; 
     left: 50%;
     width: 100%;
-    height: 95%;
+    height: 100%;
     margin: 0 auto;
     padding: 32px 24px;
     background-color: var(--LIGHT-BKG);
@@ -56,6 +56,10 @@
     border: 1px solid rgba(17, 17, 17, 0.10);
     border-radius: 15px;
 }
+.mod-buy-btn-price {
+    padding: 6px 16px;
+    border-radius: 100px;
+}
 .mod-buy-form-box {
     display: flex;
     flex-direction: column;
@@ -91,14 +95,10 @@
 .mod-buy-input-phone,
 .mod-buy-input-card {
     flex-grow: 1;
+    width: 100%;
 }
 .mod-buy-input-phone {
     padding-left: 106px;
-}
-@media screen and (min-width: 768px) {
-    .mod-buy-input-phone {
-        padding-left: 177px;
-    }
 }
 .mod-buy-input-svg {
     position: relative;
@@ -122,16 +122,6 @@
     width: 74px;
     border-right: 1.5px solid rgba(64, 64, 64, 0.3);
 }
-@media screen and (min-width: 768px) {
-    .mod-buy-flagprefix {
-        left: 24px;
-        gap: 18px;
-        font-size: 18px;
-        letter-spacing: -0.36px;
-        width: 125px;
-        border-right: 2.5px solid rgba(64, 64, 64, 0.3);
-    }
-}
 .mod-buy-phone-svg {
     width: 24px;
     height: 18px;
@@ -151,9 +141,28 @@
 .mod-buy-form-comment::placeholder {
     color: rgba(64, 64, 64, 0.30);
 }
+.send {
+    width: 109px;
+    height: 41px;
+    border-radius: 100px;
+    border: none;
+    background-color: var(--ACCENT);
+    color: var(--WHITE);
+    font-family: inherit;
+    font-weight: 600;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}   
+.send:hover,
+.send:focus {
+    background-color: var(--ACCENT-LIGH);
+    color: var(--ACCENT)
+}
+
 @media screen and (min-width: 375px) {
     .modal-buy {
        width: 311px;
+       max-height: 95%;
     }
     .mod-buy-list-item {
         padding: 24px 20px 18px;
@@ -175,6 +184,9 @@
         justify-content: space-between;
         align-items: center;
     }
+    .mod-buy-btn-price {
+        padding: 8px 27px;
+    }
     .mod-buy-form-label {
         font-size: 14px;
         line-height: 1.28;
@@ -183,6 +195,9 @@
     .mod-buy-inputs-name {
         flex-direction: row;
         gap: 21px;
+    }
+    .mod-buy-input-phone {
+        padding-left: 177px;
     }
     .mod-buy-phone-svg {
         width: 32px;
@@ -194,25 +209,14 @@
         width: 44px;
         height: 30px;
     }
-}
-.send {
-    width: 109px;
-    height: 41px;
-    border-radius: 100px;
-    border: none;
-    background-color: var(--ACCENT);
-    color: var(--WHITE);
-    font-family: inherit;
-    font-weight: 600;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}   
-.send:hover,
-.send:focus {
-    background-color: var(--ACCENT-LIGH);
-    color: var(--ACCENT)
-}
-@media screen and (min-width: 768px) {
+    .mod-buy-flagprefix {
+        left: 24px;
+        gap: 18px;
+        font-size: 18px;
+        letter-spacing: -0.36px;
+        width: 125px;
+        border-right: 2.5px solid rgba(64, 64, 64, 0.3);
+    }
     .send {
         width: 133px;
         height: 45px;

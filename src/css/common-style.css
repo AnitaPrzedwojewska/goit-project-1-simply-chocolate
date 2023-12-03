@@ -181,6 +181,7 @@ img {
 /* okno modalne */
 .modal {
   position: fixed;
+  z-index: 20;
   top: 0;
   left: 0;
   width: 100%;
