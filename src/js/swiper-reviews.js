@@ -2,7 +2,8 @@
 // To jest komentarz. pod spodem piszemy nasz kod JavaScript
 // core version + navigation, pagination modules:
 
-const swiper = new Swiper('.rev-slide-content', {
+// const swiper = new Swiper('.rev-slide-content', {
+new Swiper('.rev-slide-content', {
   // Optional parameters
   direction: 'horizontal',
 

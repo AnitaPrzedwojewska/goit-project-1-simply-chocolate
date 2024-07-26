@@ -19,7 +19,8 @@
 }
 /* FONT_END */
 :root {
-  --swiper-theme-color: #007aff;
+  --swiper-theme-color: #FD9222;
+  --swiper-preloader-color: var(--swiper-theme-color);
   /*
   --swiper-preloader-color: var(--swiper-theme-color);
   --swiper-wrapper-transition-timing-function: initial;
