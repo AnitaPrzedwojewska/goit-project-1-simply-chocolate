@@ -1,0 +1,7 @@
+services:
+  app_simply_chocolate:
+    image: node:latest
+    working_dir: /simply_chocolate
+    volumes:
+      - ./:/simply_chocolate
+    command: "npm run dev"
